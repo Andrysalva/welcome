@@ -6,4 +6,6 @@
     <string name="neque_porro_quisquam_est_qui_dolorem_ipsum_quia_dolor_sit_amet_consectetur_adipisci_velit">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</string>
     <string name="image">image</string>
     <string name="images">Images</string>
+    <string name="insert_your_name">insert your name</string>
+    <string name="label">Insert your name</string>
 </resources>
