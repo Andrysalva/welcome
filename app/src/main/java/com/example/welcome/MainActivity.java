@@ -2,11 +2,13 @@ package com.example.welcome;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,16 +16,17 @@ public class MainActivity extends AppCompatActivity {
     Button test;
     TextView output;
     EditText nome;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        reset = findViewById(R.id.reset_button);
-        nome = findViewById(R.id.name);
-        test = findViewById(R.id.test_button);
-        output = findViewById(R.id.output);
+        reset = (Button) findViewById(R.id.reset_button);
+        nome = (EditText) findViewById(R.id.name);
+        test = (Button) findViewById(R.id.test_button);
+        context = getApplicationContext();
     }
 
     public void cancella(View view){
@@ -31,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mostra_testo(View view){
-        output.setText("");
-        output.setText(nome.getText());
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context,nome.getText(), duration);
+        toast.show();
+        nome.setText("");
     }
 
 }
