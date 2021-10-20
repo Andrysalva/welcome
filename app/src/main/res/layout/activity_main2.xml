@@ -7,10 +7,9 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/lorem_ipsum"
+        android:id="@+id/testo2"
         android:layout_width="338dp"
         android:layout_height="186dp"
-        android:text="@string/neque_porro_quisquam_est_qui_dolorem_ipsum_quia_dolor_sit_amet_consectetur_adipisci_velit"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lorem_ipsum"
+        app:layout_constraintTop_toBottomOf="@+id/testo2"
         app:srcCompat="@drawable/pic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
