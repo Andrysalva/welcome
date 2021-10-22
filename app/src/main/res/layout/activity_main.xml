@@ -10,7 +10,7 @@
         android:id="@+id/output"
         android:layout_width="336dp"
         android:layout_height="120dp"
-        android:text="hey bro! clicca un tasto"
+        android:text="@string/hey_bro_clicca_un_tasto"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

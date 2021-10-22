@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void cambia_schermata(View view){
         Intent intent = new Intent(context,MainActivity2.class);
+        intent.putExtra("mes",nome.getEditableText().toString());
         startActivity(intent);
     }
 
